@@ -3,6 +3,7 @@ package com.example.userinterface.model;
 import java.util.ArrayList;
 
 public class PopularSearchData {
+
     private String txtPost,txtDesignation,txtQuantity ;
 
     public String getTxtPost() {

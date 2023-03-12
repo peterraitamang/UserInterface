@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
+    android:layout_width="100dp"
+    android:layout_height="115dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="40dp"
+    app:cardCornerRadius="20dp"
     android:layout_margin="10dp"
     android:id="@+id/cardview2">
     <LinearLayout
@@ -14,7 +14,7 @@
         <ImageView
             android:id="@+id/img_categories2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:src="@drawable/ic_science"
             android:background="@drawable/custom_cardview_shape"
             android:padding="20dp"/>

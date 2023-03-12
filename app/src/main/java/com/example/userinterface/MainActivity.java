@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         b = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
 
+
         PopularSearchData[] myData = new PopularSearchData[]{
                 new PopularSearchData("UI/UX","Designer","5"),
                 new PopularSearchData("Java Script","Developer","24"),
@@ -35,15 +36,15 @@ public class MainActivity extends AppCompatActivity {
         PopularSearchAdapter adapter = new PopularSearchAdapter(myData);
         recyclerView.setAdapter(adapter);
 
-//        CategoriesData[] myData2 = new CategoriesData[]{
-//                new CategoriesData("Science",""),
-//                new CategoriesData("Culture",""),
-//                new CategoriesData("IT",""),
-//                new CategoriesData("Beauty","")
-//        };
-//        RecyclerView recyclerView1 = (RecyclerView) findViewById(R.id.recyclerView_two);
-//        CategoriesAdapter adapter1 = new CategoriesAdapter(myData2);
-//        recyclerView1.setAdapter(adapter1);
+        CategoriesData[] myData2 = new CategoriesData[]{
+                new CategoriesData("Science",R.drawable.ic_science),
+                new CategoriesData("Culture",R.drawable.ic_culture),
+                new CategoriesData("IT",R.drawable.ic_it),
+                new CategoriesData("Beauty",R.drawable.ic_beauty)
+        };
+        RecyclerView recyclerView1 = (RecyclerView) findViewById(R.id.recyclerView_two);
+        CategoriesAdapter adapter1 = new CategoriesAdapter(myData2);
+        recyclerView1.setAdapter(adapter1);
 
     }
 }

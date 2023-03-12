@@ -39,7 +39,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), categoriesData.getTxtName()+""+"selected.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), categoriesData.getTxtName()+" "+"selected.", Toast.LENGTH_SHORT).show();
             }
         });
 

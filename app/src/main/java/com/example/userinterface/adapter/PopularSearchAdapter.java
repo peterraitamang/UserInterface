@@ -1,5 +1,6 @@
 package com.example.userinterface.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import com.example.userinterface.databinding.ActivityMainBinding;
 import com.example.userinterface.model.PopularSearchData;
 
 public class PopularSearchAdapter extends RecyclerView.Adapter<PopularSearchAdapter.ViewHolder>{
+
     private PopularSearchData[]mydata;
 
     public PopularSearchAdapter(PopularSearchData[] mydata) {
@@ -45,11 +47,15 @@ public class PopularSearchAdapter extends RecyclerView.Adapter<PopularSearchAdap
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                if (position == 0) {
+                    Intent intent = new Intent(view.getContext(), ScreenTwoActivity.class);
+                    view.getContext().startActivity(intent);
+                }
+                else {
+                    Toast.makeText(view.getContext(),popularSearchData.getTxtQuantity()+" "+popularSearchData.getTxtPost()+" "+popularSearchData.getTxtDesignation()+" "+ "position vacant.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
-
     }
 
     @Override
