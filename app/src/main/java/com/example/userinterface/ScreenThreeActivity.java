@@ -16,6 +16,7 @@ public class ScreenThreeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         d = ActivityScreenThreeBinding.inflate(getLayoutInflater());
         setContentView(d.getRoot());
+        getSupportActionBar().hide();
          btnback();
     }
 

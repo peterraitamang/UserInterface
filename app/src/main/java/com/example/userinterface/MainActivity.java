@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         b = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
+        getSupportActionBar().hide();
 
 
         PopularSearchData[] myData = new PopularSearchData[]{

@@ -19,6 +19,7 @@ public class ScreenTwoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         c = ActivityScreenTwoBinding.inflate(getLayoutInflater());
         setContentView(c.getRoot());
+        getSupportActionBar().hide();
 
         SearchDetailsData[] myData = new SearchDetailsData[]{
                 new SearchDetailsData("UI/UX Designer",R.drawable.ic_ui_ux,"$7k","$8k"),
